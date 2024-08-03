@@ -1,6 +1,11 @@
+@XCorrelationID = "wdewe2e3232weqsqsw323wqwqsq"
+@XTraceID = 2323232323232323
+
 @TrackWithCustomHeaders_HostAddress = http://localhost:5289
 
-GET {{TrackWithCustomHeaders_HostAddress}}/weatherforecast/
+GET {{TrackWithCustomHeaders_HostAddress}}/simpleDtoExtract/
 Accept: application/json
-
+Content-Type: application/json
+X-Correlation-ID: {{XCorrelationID}}
+X-Trace-ID: {{XTraceID}}
 ###
